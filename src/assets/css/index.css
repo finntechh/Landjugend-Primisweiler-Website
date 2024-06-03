@@ -1,0 +1,287 @@
+/* Allgemein */
+
+* {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "biocats";
+    src: url("../font/biocats/Biocats.ttf");
+}
+
+@font-face {
+    font-family: "code";
+    src: url("../font/code/code.otf");
+}
+
+:root {
+    --dark: #0c0c11;
+    --light: #fffcf9;
+    --accent: #FFDD0C;
+}
+
+.dark {
+    --light: #0c0c11;
+    --dark: #fffcf9;
+    --accent: #FFDD0C;
+}
+
+body {
+    background-color: var(--light);
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: initial;
+}
+
+.disable-scroll {
+    overflow: hidden;
+}
+
+div, ul, li, a, header, nav, span {
+    border: 1px solid rd;
+}
+
+/* Allgemein ende */
+
+/* Navbar */
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #fffcf9;
+    min-height: 8vh;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100dvw;
+}
+
+.nav-logo-container {
+    margin: 10px 20px;
+}
+
+.nav-logo {
+    max-width: 150px;
+}
+
+.nav-list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list-item {
+    margin: 0 1rem;
+}
+
+.nav-list-link {
+    color: #0c0c19;
+    padding: 6px 18px;
+    border: 3px solid #0c0c19;
+    border-radius: 15px;
+    font-weight: bold;
+    transition-duration: .2s;
+}
+
+.nav-list-link:hover {
+    background-color: #0c0c19;
+    color: #fffcf9;
+}
+
+.nav-dropdown-btn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin: .5rem 2rem;
+}
+
+.nav-dropdown-btn span {
+    height: 6px;
+    width: 40px;
+    background-color: #0c0c19;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+.nav-button-rect1, .nav-button-rect3 {
+    transform-origin: 7.7px;
+}
+
+.nav-dropdown-menu {
+    position: absolute;
+    height: 190rem;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--accent); 
+}
+
+.nav-dropdown-list {
+    padding: 2rem 0;
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.nav-dropdown-item {
+    margin: 1rem 0;
+    width: 80%;
+}
+
+.nav-dropdown-link {
+    background-color: #fffcf9;
+    padding: 16px 40px;
+    border: 3px solid #0c0c11;
+    border-radius: 10px 0 0 10px;
+    display: block;
+    color: #0c0c11;
+    background-color: #fffcf9;
+    box-shadow: 5px 10px 0px black;
+}
+
+.darkmode {
+    background-color: var(--dark);
+    padding: .4rem .5rem;
+    border-radius: 100%;
+    border: 3px solid var(--light);
+    cursor: pointer;
+    text-align: center;
+    outline: 1px solid var(--dark);
+}
+
+.darkmode i {
+    color: var(--light);
+}
+
+/* Navbar ende */
+
+
+
+
+/*  Footer-Start */
+
+footer {
+    max-width: 100%;
+    background-color: var(--light);
+}
+
+.footer-container {
+    padding: 1rem 3rem;
+}
+
+.footer-content {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-heading {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-heading h1 {
+    font-family: biocats, sans-serif;
+    color: var(--dark);
+    letter-spacing: 3px;
+}
+
+.footer-email {
+    margin: 2rem 0;
+}
+
+.footer-email h2, .footer-email span {
+    font-family: monospace, sans-serif;
+    color: var(--dark);
+    transition-duration: .2s;
+}
+
+.footer-email span:hover {
+    color: var(--accent);
+}
+
+
+.footer-col-container {
+    margin: 0 0 4rem 0;
+}
+
+.footer-col-1, .footer-col-2 {
+    max-width: 100%;
+}
+
+.footer-col-1 {
+    text-align: center;
+}
+
+.footer-item {
+    margin: .5rem 3rem;
+}
+
+.footer-link {
+    color: var(--dark);
+    padding: .5rem 2rem;
+    transition-duration: .3s;
+    font-family: code,sans-serif;
+    letter-spacing: 2px;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-link:hover {
+    color: var(--accent);
+}
+
+.footer-col-2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+}
+
+.footer-socials a {
+    display: flex;
+    align-content: center;
+    cursor: default;
+}
+
+.footer-socials a img {
+    width: 50px;
+    margin: 0 2rem;
+    cursor: pointer;
+}
+
+/*  Footer-Ende */

@@ -1,0 +1,83 @@
+
+.home-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-heading {
+    margin: 5rem 0;
+    font-size: 36pt;
+    font-family: "biocats", sans-serif;
+    letter-spacing: 2px;
+    color: var(--dark);
+    text-shadow: 0px 0px 1px var(--dark),
+                -0px -0px 1px var(--dark);
+}
+
+.home-description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dark);
+    box-shadow: 1px 1px 10px black;
+
+}
+
+.home-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dark);
+}
+
+.home-description p {
+    font-family: "code", sans-serif;
+    letter-spacing: 3px;
+    color: var(--light);
+    font-size: larger;
+}
+
+label {
+    font-family: "code", sans-serif;
+    letter-spacing: 2px;
+    color: var(--light);
+    font-size: smaller;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+input {
+    letter-spacing: 2px;
+    color: #1e1e1e;
+    font-size: larger;
+    padding: .5rem 3rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.btn {
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    background-color: var(--accent);
+    border: 0;
+    margin: 1rem 0 1.5rem 0;
+    font-size: larger;
+    color: black;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.home-image {
+    object-fit: cover;
+}
