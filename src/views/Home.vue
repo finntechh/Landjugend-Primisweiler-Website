@@ -44,7 +44,7 @@ const handleForm = () => {
 
 const resetSubmit = () => {
   setTimeout(() => {
-    formSubmitted = false;
+    formSubmitted = false; 
   }, 10000)
 }
 
